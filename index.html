@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>CSV To Database</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<h1>CSV To <span>DataBase</span>
+			<i class="fa fa-database" style="font-size:48px;"></i>
+		</h1>
+	</header>
+	<div class="container">
+		<h2>UPLOAD YOUR .CSV FILE</h2>
+		<form id="form" method="post" action="/" enctype="multipart/form-data">
+			<input class="file" type="file" name="filename">
+			<input class="submit" type="submit" value="UPLOAD">
+		</form>
+		<div id="box"></div>
+	</div>
+</body>
+<style>
+	body {
+		margin: auto;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+	}
+
+	h1 {
+		background-color: black;
+		color: white;
+		padding: 30px;
+		letter-spacing: 3px;
+		margin-bottom: 50px;
+	}
+
+	span {
+		color: #4DB33D;
+	}
+
+	.container {
+		margin-top: 50px;
+		width: 60%;
+		margin: auto;
+		border: black solid 3px;
+		padding: 20px;
+		border-radius: 15px;
+		position: relative;
+	}
+
+	img {
+		width: 50px;
+		position: absolute;
+		top: -30px;
+		left: 25px;
+	}
+
+	input {
+		margin-top: 25px;
+
+		padding: 5px;
+	}
+
+	.submit {
+		margin-left: 15px;
+		background-color: #4DB33D;
+		color: white;
+		border-radius: 7px;
+		border: none;
+		padding: 10px;
+		letter-spacing: 1px;
+
+	}
+
+	.file {
+		padding: 10px;
+		background-color: black;
+		border-radius: 7px;
+		color: white;
+	}
+
+	h2 {
+		font-size: 35px;
+		border: 4px #4DB33D solid;
+		border-radius: 8px;
+		padding: 7px;
+		text-align: center;
+	}
+</style>
+
+</html>
